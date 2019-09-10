@@ -8,6 +8,11 @@ function addTask() {
     li.innerText = input.value
     ul.appendChild(li)
     input.value = ""
+    li.onclick = removeItem
+}
+
+function removeItem(e) {
+    e.target.parentElement.removeChild(e.target)
 }
 
 
