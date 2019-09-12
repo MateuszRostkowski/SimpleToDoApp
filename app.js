@@ -1,5 +1,6 @@
 const input = document.querySelector('#input')
 const ul = document.querySelector('#list')
+const removeButton = document.querySelector('#removeAll')
 
 console.log(ul)
 
@@ -23,6 +24,13 @@ input.addEventListener(
             addTask()
         }        
     }
+)
+
+removeButton.addEventListener(
+    'click',
+    () => (
+        ul.innerHTML = '<li>You can\'t delete me, but why do you delete all to do\'s?</li>'
+    )
 )
 
 
