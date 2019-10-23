@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e7e6ff;
+    min-height: 100vh;
+}
+
+#addToDo {
+    display: block;
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background: #8e8cff;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.table {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.row {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+.title {
+    font-weight: bold;
+}
+
+.title,
+.item,
+.time {
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.row:nth-child(odd) {background: #FFF};
+.row:nth-child(even) {
+    background: #ddd;
+}
+.row:first-child {background: #CCC}
+
